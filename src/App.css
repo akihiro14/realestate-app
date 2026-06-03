@@ -314,3 +314,192 @@ body {
   font-weight: 400;
   color: #b2bec3;
 }
+
+/* ——— CRUD操作UI ——— */
+
+/* 一覧ヘッダー（タイトル + 新規登録ボタン） */
+.section-header {
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+  margin-bottom: 28px;
+}
+
+.section-header .section-title {
+  margin-bottom: 0;
+}
+
+.section-header .property-count {
+  margin-bottom: 0;
+}
+
+/* 新規登録ボタン */
+.btn-add {
+  padding: 10px 20px;
+  background-color: #2d6a4f;
+  color: #fff;
+  border: none;
+  border-radius: 8px;
+  font-size: 15px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background-color 0.2s;
+  white-space: nowrap;
+}
+
+.btn-add:hover {
+  background-color: #1b4332;
+}
+
+/* カード内アクションエリア */
+.card-actions {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+/* 編集ボタン */
+.btn-edit {
+  padding: 6px 14px;
+  background-color: #f0f4ff;
+  color: #2d6a4f;
+  border: 1px solid #b7d4c3;
+  border-radius: 6px;
+  font-size: 13px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background-color 0.2s;
+}
+
+.btn-edit:hover {
+  background-color: #d8f3dc;
+}
+
+/* 削除ボタン */
+.btn-delete {
+  padding: 6px 14px;
+  background-color: #fff5f5;
+  color: #c53030;
+  border: 1px solid #feb2b2;
+  border-radius: 6px;
+  font-size: 13px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background-color 0.2s;
+}
+
+.btn-delete:hover {
+  background-color: #ffe0e0;
+}
+
+/* 削除確認インライン */
+.delete-confirm {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  font-size: 12px;
+  color: #636e72;
+  flex-wrap: wrap;
+}
+
+.btn-confirm-delete {
+  padding: 4px 10px;
+  background-color: #c53030;
+  color: #fff;
+  border: none;
+  border-radius: 6px;
+  font-size: 12px;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.btn-cancel-delete {
+  padding: 4px 10px;
+  background-color: #dfe6e9;
+  color: #2d3436;
+  border: none;
+  border-radius: 6px;
+  font-size: 12px;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+/* 物件ゼロ件のempty state */
+.empty-state {
+  text-align: center;
+  padding: 64px 24px;
+  color: #b2bec3;
+  font-size: 15px;
+  background: #fff;
+  border-radius: 12px;
+  border: 2px dashed #dfe6e9;
+}
+
+/* ——— モーダル ——— */
+.modal-overlay {
+  position: fixed;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.5);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 24px;
+  z-index: 100;
+}
+
+.modal-card {
+  background: #fff;
+  border-radius: 16px;
+  padding: 40px 36px;
+  width: 100%;
+  max-width: 460px;
+  box-shadow: 0 20px 60px rgba(0, 0, 0, 0.25);
+}
+
+.modal-title {
+  font-size: 22px;
+  font-weight: 700;
+  color: #1b4332;
+  margin-bottom: 24px;
+}
+
+/* フォーム下部のボタン行 */
+.modal-actions {
+  display: flex;
+  gap: 12px;
+  margin-top: 8px;
+}
+
+.modal-actions .btn-primary {
+  flex: 1;
+  margin-top: 0;
+}
+
+/* セカンダリボタン（キャンセル） */
+.btn-secondary {
+  flex: 1;
+  padding: 13px;
+  background-color: #f1f3f5;
+  color: #636e72;
+  border: none;
+  border-radius: 8px;
+  font-size: 16px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background-color 0.2s;
+}
+
+.btn-secondary:hover {
+  background-color: #dfe6e9;
+}
+
+/* カードのfooterをアクションと家賃で横並びに */
+.property-card-footer {
+  border-top: 1px solid #f1f3f5;
+  padding-top: 16px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 8px;
+}
