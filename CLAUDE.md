@@ -73,6 +73,11 @@ npm run preview # ビルド結果のプレビュー
 - コミットメッセージは変更内容が分かる日本語で記載する
 - リモートリポジトリ: `git@github.com:akihiro14/realestate-app.git`
 
+## デプロイ情報
+
+- 本番URL：https://realestate-app-one-alpha.vercel.app
+- Supabaseプロジェクト名：realestate-app
+
 ## 回答ルール
 
 - 回答するたびにこのCLAUDE.mdを最新の状態に更新する
